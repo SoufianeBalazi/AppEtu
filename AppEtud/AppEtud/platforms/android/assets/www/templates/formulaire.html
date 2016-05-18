@@ -1,20 +1,26 @@
-<ion-view title="Formulaire" id="page1" class=" ">
+<ion-view title="Formulaire" id="page1" class="">
     <ion-content padding="true" class="has-header">
-        <form id="formulaire-form1" class="list ">
+        <form id="formulaire-form1" class="list "  >
             <label class="item item-input " id="formulaire-input1" name="nom">
-                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom" ng-model="nom">
             </label>
             <label class="item item-input " id="formulaire-input3" name="prenom">
-                <input type="text" placeholder="Prenom">
+                <input type="text" placeholder="Prenom" ng-model="prenom">
             </label>
             <label class="item item-input " id="formulaire-input6" name="site">
-                <input type="text" placeholder="Site ">
+                <input type="text" placeholder="Site " ng-model="site">
             </label>
             <label class="item item-input " id="formulaire-input4" name="date">
-                <input type="date" placeholder="Date de naissance">
+                <input type="date" placeholder="Date de naissance" ng-model="dateNaiss" >
             </label>
+            
+            <button    ng-click="insert(nom,prenom,dateNaiss,site)" id="formulaire-button1" style="font-weight:600;border-radius:10px 10px 10px 10px;" class="button button-balanced  button-block icon ion-android-send "></button>
+
         </form>
-        <button id="formulaire-button2" style="font-weight:600;border-radius:10px 10px 10px 10px;" class=" button button-balanced  button-block icon ion-android-send "></button>
-        <button id="formulaire-button3" style="font-weight:600;border-radius:10px 10px 10px 10px;" class=" button button-assertive  button-block icon ion-android-arrow-back "></button>
+       
+        
+        <a ui-sref="menu" id="formulaire-button2" style="font-weight:600;border-radius:10px 10px 10px 10px;" class="button button-assertive  button-block icon ion-android-arrow-back "></a>
     </ion-content>
 </ion-view>
+
+

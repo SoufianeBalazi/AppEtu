@@ -35,13 +35,13 @@ angular.module('app.routes', [])
   })
 
      .state('formulaire', {
-         url: '/page1',
+         url: '/formulaire',
          templateUrl: 'templates/formulaire.html',
          controller: 'formulaireCtrl'
      })
 
   .state('graph', {
-      url: '/page3',
+      url: '/graph',
       templateUrl: 'templates/graph.html',
       controller: 'graphCtrl'
   })

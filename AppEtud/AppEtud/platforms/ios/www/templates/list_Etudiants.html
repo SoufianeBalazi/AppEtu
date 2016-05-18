@@ -1,0 +1,14 @@
+<ion-view title="List_Etudiants" id="page2" class="">
+    <ion-content padding="true" class="has-header">
+        <a ui-sref="menu" id="list_Etudiants-button5" class="button button-positive  button-block icon ion-android-arrow-back"></a>
+        <div class="list card" id="list_Etudiants-card1">
+            <div class="item item-divider">Etudiants</div>
+            <div class="item item-body">
+                <ion-list id="list_Etudiants-list2" class="">
+                    <ion-item ng-repeat="x in names"  id="list_Etudiants-list-item1" class="">{{x}}</ion-item>
+                    
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
